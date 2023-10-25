@@ -16,6 +16,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body class="body">
     <!-- Start Header -->
@@ -45,7 +51,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarNav"
                 >
-                  <span class="navbar-toggler-icon"></span>
+                  <i class="fa-solid fa-bars text-white"></i>
                 </button>
               </div>
 
@@ -245,13 +251,8 @@
             data-bs-target="#carouselExampleInterval"
             data-bs-slide="prev"
           >
-            <div style="width: 60px; height: 30px">
-              <img
-                src="./images/rightArrow.png"
-                class="img-fluid"
-                style="width: 100%; height: 100%"
-                alt=""
-              />
+            <div class="arrow">
+              <img src="./images/rightArrow.png" class="img-fluid" alt="" />
             </div>
           </button>
           <button
@@ -260,13 +261,8 @@
             data-bs-target="#carouselExampleInterval"
             data-bs-slide="next"
           >
-            <div style="width: 60px; height: 30px">
-              <img
-                src="./images/leftArrow.png"
-                class="img-fluid"
-                style="width: 100%; height: 100%"
-                alt=""
-              />
+            <div class="arrow">
+              <img src="./images/leftArrow.png" class="img-fluid" alt="" />
             </div>
           </button>
         </div>
@@ -276,12 +272,1077 @@
 
     <section class="pt-5">
       <div class="container">
-        <div class="banner">
-          <div class="bannerCircle"><div class="screenBg"></div></div>
+        <div class="bannerAds">
+          <div class="bannerText">
+            <h1 class="text-white" style="font-weight: 600">SAVE UP TO 30%</h1>
+            <h2 class="text-white" style="font-weight: 100">
+              MEN'S COLLECTION
+            </h2>
+          </div>
+          <div class="banner">
+            <div class="shape">
+              <div class="left-line"></div>
+              <div class="top-line"></div>
+              <div class="right-line"></div>
+              <div class="bottom-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new or sale product -->
+
+    <section class="mt-4">
+      <div class="container">
+        <div class="grid-col-3">
+          <div class="p-5 bg-white position-relative serviceBox">
+            <div class="productStatus">
+              <p>NEW</p>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center"
+              style="width: 220px; height: 220px; margin: 0 auto"
+            >
+              <img src="./images/shoes1.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="p-5 bg-white position-relative serviceBox">
+            <div class="productStatus">
+              <p>SALE</p>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center"
+              style="width: 220px; height: 220px; margin: 0 auto"
+            >
+              <img src="./images/shoes2.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="p-5 bg-white position-relative serviceBox">
+            <div class="productStatus">
+              <p>NEW</p>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center"
+              style="width: 220px; height: 220px; margin: 0 auto"
+            >
+              <img src="./images/shoes3.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Arrivals -->
+    <section style="padding-top: 80px">
+      <div class="mx-auto text-center position-relative">
+        <h2 class="fs-4 fw-bold font-roboto">NEW ARRIVALS</h2>
+        <div class="SubTitle">
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 12px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; right: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="
+              width: 5px;
+              height: 15px;
+              right: 12px;
+              background-color: gray;
+            "
+          ></span>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="grid-2">
+          <div class="p-4 bg-white collectionBox">
+            <h1 style="font-weight: 600; color: #6f6f6f; font-size: 25px">
+              MEN'S <br />
+              <span style="font-weight: 100; color: grey">COLLECTION</span>
+            </h1>
+            <div
+              class="d-flex align-items-center justify-content-center w-75 h-75 mx-auto"
+            >
+              <img
+                src="./images/men'sCollection.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="shoppingCart">
+              <img src="./images/addToCart.png" alt="" />
+            </div>
+          </div>
+          <div class="p-4 bg-white position-relative collectionBox">
+            <div class="ps-5 pt-5">
+              <p class="mb-0" style="font-size: 14px">LIMITED RELEASE</p>
+              <h2 style="font-size: 18px; font-weight: 600">
+                MEN'S ACTIVE SHOES <br />
+                $90
+              </h2>
+            </div>
+            <div
+              class="spaceMt d-flex align-items-start justify-content-center w-75 h-75 mx-auto"
+            >
+              <img
+                src="./images/newArrivalsShoes.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="w-sm-75 w-md-50 w-lg-50 position-absolute bottom-0 end-0 pb-4 pe-4 d-flex align-content-center justify-content-around gap-2"
+            >
+              <div
+                class="border d-flex align-items-center justify-content-center px-2"
+                style="max-width: 120px; max-height: 100px; padding: 20px 0"
+              >
+                <img
+                  src="./images/men'sChild1.png"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border d-flex align-items-center justify-content-center px-2"
+                style="max-width: 120px; max-height: 100px; padding: 20px 0"
+              >
+                <img
+                  src="./images/men'sChild2.png"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border d-flex align-items-center justify-content-center px-2"
+                style="max-width: 120px; max-height: 100px; padding: 20px 0"
+              >
+                <img
+                  src="./images/men'sChild3.png"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="shoppingCart">
+              <img src="./images/addToCart.png" alt="" />
+            </div>
+          </div>
+          <div class="p-4 bg-white position-relative collectionBox">
+            <div class="ps-5 pt-5">
+              <p class="mb-0" style="font-size: 14px">LIMITED RELEASE</p>
+              <h2 style="font-size: 18px; font-weight: 600">
+                WOMEN'S ACTIVE SHOES <br />
+                $90
+              </h2>
+            </div>
+            <div
+              class="spaceMt align-items-start justify-content-center w-75 h-50 mx-auto"
+            >
+              <img
+                src="./images/Women'sCollction.png"
+                class="img-fluid"
+                alt=""
+                style="width: 100%; height: 170px; object-fit: contain"
+              />
+            </div>
+            <div
+              class="w-sm-75 w-md-50 w-lg-50 position-absolute bottom-0 end-0 pb-4 pe-4 d-flex align-content-center justify-content-around gap-2"
+            >
+              <div
+                class="border d-flex align-items-center justify-content-center px-2"
+                style="max-width: 120px; max-height: 100px; padding: 20px 0"
+              >
+                <img
+                  src="./images/women'sChild1.png"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border d-flex align-items-center justify-content-center px-2"
+                style="max-width: 120px; max-height: 100px; padding: 20px 0"
+              >
+                <img
+                  src="./images/women'sChild2.png"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border d-flex align-items-center justify-content-center px-2"
+                style="max-width: 120px; max-height: 100px; padding: 20px 0"
+              >
+                <img
+                  src="./images/women'sChild3.png"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="shoppingCart">
+              <img src="./images/addToCart.png" alt="" />
+            </div>
+          </div>
+          <div class="p-4 bg-white collectionBox">
+            <h1 style="font-weight: 600; color: #6f6f6f; font-size: 25px">
+              WOMEN'S <br />
+              <span style="font-weight: 100; color: grey">COLLECTION</span>
+            </h1>
+            <div
+              class="d-flex align-items-center justify-content-center mx-auto"
+              style="width: 100%; height: 350px"
+            >
+              <img
+                src="./images/WomensCollections.png"
+                class="img-fluid"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="shoppingCart">
+              <img src="./images/addToCart.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Product -->
+    <section style="padding-top: 80px">
+      <div class="mx-auto text-center position-relative">
+        <h2 class="fs-4 fw-bold font-roboto">FEATURED PRODUCTS</h2>
+        <div class="SubTitle">
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 12px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; right: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="
+              width: 5px;
+              height: 15px;
+              right: 12px;
+              background-color: gray;
+            "
+          ></span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-button selectTab" onclick="openTab('men')">
+            MEN
+          </button>
+          <button class="tab-button" onclick="openTab('women')">WOMEN</button>
+          <button class="tab-button" onclick="openTab('kid')">KID</button>
+        </div>
+
+        <div id="men" class="tab">
+          <p class="text-danger">
+            Men Content are not available at this moment
+          </p>
+        </div>
+
+        <div id="women" class="tab selectTab">
+          <div class="grid-col-3">
+            <div class="bg-white">
+              <div class="p-4 collectionBox">
+                <h4 class="text-end fs-6">$80</h4>
+                <div
+                  class="d-flex align-items-center justify-content-center mx-auto py-3"
+                  style="width: 100%; height: 200px"
+                >
+                  <img
+                    src="./images/products/shoes1.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 style="font-size: 14px; font-weight: 400">PUMP SHOES</h3>
+                  <p class="d-flex align-items-center" style="font-size: 10px">
+                    <span style="color: #1996ff">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span style="color: #6f6f6f"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+                <div class="shoppingCart">
+                  <img src="./images/addToCart.png" alt="" />
+                </div>
+              </div>
+              <div class="p-4 collectionBox">
+                <h4 class="text-end fs-6">$80</h4>
+                <div
+                  class="d-flex align-items-center justify-content-center mx-auto py-3"
+                  style="width: 100%; height: 200px"
+                >
+                  <img
+                    src="./images/products/shoes2.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 style="font-size: 14px; font-weight: 400">PUMP SHOES</h3>
+                  <p class="d-flex align-items-center" style="font-size: 10px">
+                    <span style="color: #1996ff">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span style="color: #6f6f6f"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+                <div class="shoppingCart">
+                  <img src="./images/addToCart.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white">
+              <div class="p-4 collectionBox">
+                <h4 class="text-end fs-6">$80</h4>
+                <div
+                  class="d-flex align-items-center justify-content-center mx-auto py-3"
+                  style="width: 100%; height: 200px"
+                >
+                  <img
+                    src="./images/products/shoes3.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 style="font-size: 14px; font-weight: 400">PUMP SHOES</h3>
+                  <p class="d-flex align-items-center" style="font-size: 10px">
+                    <span style="color: #1996ff">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span style="color: #6f6f6f"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+                <div class="shoppingCart">
+                  <img src="./images/addToCart.png" alt="" />
+                </div>
+              </div>
+              <div class="p-4 collectionBox">
+                <h4 class="text-end fs-6">$80</h4>
+                <div
+                  class="d-flex align-items-center justify-content-center mx-auto py-3"
+                  style="width: 100%; height: 200px"
+                >
+                  <img
+                    src="./images/products/shoes4.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 style="font-size: 14px; font-weight: 400">PUMP SHOES</h3>
+                  <p class="d-flex align-items-center" style="font-size: 10px">
+                    <span style="color: #1996ff">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span style="color: #6f6f6f"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+                <div class="shoppingCart">
+                  <img src="./images/addToCart.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white">
+              <div class="p-4 collectionBox">
+                <h4 class="text-end fs-6">$80</h4>
+                <div
+                  class="d-flex align-items-center justify-content-center mx-auto py-3"
+                  style="width: 100%; height: 200px"
+                >
+                  <img
+                    src="./images/products/shoes5.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 style="font-size: 14px; font-weight: 400">PUMP SHOES</h3>
+                  <p class="d-flex align-items-center" style="font-size: 10px">
+                    <span style="color: #1996ff">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span style="color: #6f6f6f"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+                <div class="shoppingCart">
+                  <img src="./images/addToCart.png" class="" alt="" />
+                </div>
+              </div>
+              <div class="p-4 collectionBox">
+                <h4 class="text-end fs-6">$80</h4>
+                <div
+                  class="d-flex align-items-center justify-content-center mx-auto py-3"
+                  style="width: 100%; height: 200px"
+                >
+                  <img
+                    src="./images/products/shoes6.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 style="font-size: 14px; font-weight: 400">PUMP SHOES</h3>
+                  <p class="d-flex align-items-center" style="font-size: 10px">
+                    <span style="color: #1996ff">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span style="color: #6f6f6f"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+                <div class="shoppingCart">
+                  <img src="./images/addToCart.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="kid" class="tab">
+          <p class="text-danger">
+            KID Content are not available at this moment
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- Hot Deals -->
+
+    <section
+      class="py-sm-5 py-lg-0"
+      style="margin-top: 80px; background-color: white"
+    >
+      <div class="container">
+        <div class="grid-col-3 align-items-center pt-lg-0 pt-md-0 pt-5">
+          <div class="hotTitle">
+            <h1>HOT DEALS</h1>
+          </div>
+          <div>
+            <div>
+              <h5>JORDAN 4 DUNK</h5>
+              <p
+                class="d-flex align-items-center gap-2"
+                style="font-size: 14px; margin-top: -5px"
+              >
+                <span
+                  class="d-flex align-items-center gap-2"
+                  style="color: #1996ff"
+                  ><i class="fa-regular fa-star"></i
+                  ><i class="fa-regular fa-star"></i
+                  ><i class="fa-regular fa-star"></i
+                  ><i class="fa-regular fa-star"></i></span
+                ><span style="color: #343434"
+                  ><i class="fa-regular fa-star"></i>
+                </span>
+                ( 3 review )
+              </p>
+              <p class="text-black fs-5" style="margin-top: -15px">
+                <span class="text-decoration-line-through text-body-secondary"
+                  >$250.00</span
+                >
+                $230.00
+              </p>
+            </div>
+            <div class="my-4 hotDealsIcon d-flex align-items-center gap-3">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-rotate"></i>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div class="DateBox">
+                <h5>156</h5>
+                <p>DAYS</p>
+              </div>
+              <div class="DateBox">
+                <h5>55</h5>
+                <p>HRS</p>
+              </div>
+              <div class="DateBox">
+                <h5>65</h5>
+                <p>MINS</p>
+              </div>
+              <div class="DateBox">
+                <h5>52</h5>
+                <p>SECS</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="discount">
+              <h3 class="d-flex align-items-center justify-content-center">
+                -25%
+              </h3>
+            </div>
+            <div style="width: 100%; height: 100%">
+              <img
+                src="./images/HotDeals.png"
+                class="img-fluid"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 80px">
+      <div class="mx-auto text-center position-relative">
+        <h2 class="fs-4 fw-bold font-roboto">LATEST BLOGS</h2>
+        <div class="SubTitle">
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 12px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; right: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="
+              width: 5px;
+              height: 15px;
+              right: 12px;
+              background-color: gray;
+            "
+          ></span>
+        </div>
+      </div>
+      <div class="container pt-5 overflow-hidden" style="min-height: 610px">
+        <div class="grid-1 align-items-start">
+          <div>
+            <div style="width: 100%; height: 610px">
+              <img
+                src="./images/blogs1.png"
+                class="img-fluid"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-3">
+            <div>
+              <div>
+                <div
+                  style="width: 100%; max-height: 317px"
+                  class="mb-lg-0 mb-md-3"
+                >
+                  <img
+                    src="./images/blogs2.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+              </div>
+              <div
+                class="py-5 bg-white overflow-y-hidden"
+                style="min-height: 317px"
+              >
+                <div style="width: 100%; height: 40px">
+                  <img
+                    src="./images/book.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="text-center px-3">
+                  <p class="text-secondary mt-3">31 January, 2016 By JOHN</p>
+
+                  <h5
+                    class="mt-3 text-black"
+                    style="font-weight: 300; font-size: 14px"
+                  >
+                    Our autumn 2016 exhibition Shoes: Pleasure and Pain will
+                    look at the extreme...
+                  </h5>
+                  <button class="mt-3 readBtn">READ MORE</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="py-5 bg-white overflow-hidden"
+                style="min-height: 317px"
+              >
+                <div style="width: 100%; height: 40px">
+                  <img
+                    src="./images/book.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+                <div class="text-center px-3">
+                  <p class="text-secondary mt-3">31 January, 2016 By JOHN</p>
+
+                  <h5
+                    class="mt-3 text-black"
+                    style="font-weight: 300; font-size: 14px"
+                  >
+                    Our autumn 2016 exhibition Shoes: Pleasure and Pain will
+                    look at the extreme...
+                  </h5>
+                  <button class="mt-3 readBtn">READ MORE</button>
+                </div>
+              </div>
+              <div>
+                <div style="width: 100%; max-height: 317px">
+                  <img
+                    src="./images/blogs3.png"
+                    class="img-fluid"
+                    alt=""
+                    style="width: 100%; height: 100%; object-fit: contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Brands -->
+    <section style="padding-top: 80px">
+      <div class="mx-auto text-center position-relative">
+        <h2 class="fs-4 fw-bold font-roboto">OUR BRANDS</h2>
+        <div class="SubTitle">
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; left: 12px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="width: 5px; height: 15px; right: 5px; background-color: gray"
+          ></span>
+          <span
+            class="position-absolute top-50 translate-middle-y"
+            style="
+              width: 5px;
+              height: 15px;
+              right: 12px;
+              background-color: gray;
+            "
+          ></span>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+          <div
+            class="position-absolute"
+            style="top: -30%; right: 10px; z-index: 1050"
+          >
+            <a
+              class="carousel-control-prev"
+              href="#productCarousel"
+              role="button"
+              data-slide="prev"
+              style="display: block; color: black; font-size: 12px"
+            >
+              <i
+                class="fa-solid fa-chevron-right"
+                style="border: 1px solid black; padding: 5px"
+              ></i>
+            </a>
+          </div>
+          <div
+            class="position-absolute"
+            style="top: -30%; right: 35px; z-index: 1050"
+          >
+            <a
+              class="carousel-control-next"
+              href="#productCarousel"
+              role="button"
+              data-slide="next"
+              style="display: block; color: black; font-size: 12px"
+            >
+              <i
+                class="fa-solid fa-chevron-left"
+                style="border: 1px solid black; padding: 5px"
+              ></i>
+            </a>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row d-lg-flex d-md-none d-none">
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand1.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand2.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand3.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand4.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row d-md-flex gap-3 d-none d-lg-none">
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand1.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand2.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand3.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="row d-flex align-items-center gap-3 d-md-none d-lg-none"
+              >
+                <div class="col-md-6">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand1.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 1"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-md-flex d-none align-items-center gap-3">
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand4.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand5.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row d-flex align-items-center gap-3 d-md-none d-lg-none"
+              >
+                <div class="col-md-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center"
+                    style="width: 180px; height: 90px; background-color: white"
+                  >
+                    <img
+                      src="images/brands/brand5.png"
+                      style="width: 120px; height: 60px; object-fit: contain"
+                      alt="Product 2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer style="margin-top: 80px; background-color: #363636">
+      <div
+        class="container d-flex align-items-center gap-2 py-4 text-white"
+        style="font-size: 14px"
+      >
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-solid fa-rss" style="color: #ff862c"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="w-100" style="height: 1px; background-color: gray"></div>
+      <div class="container">
+        <div class="grid-4 mt-5 text-white">
+          <div>
+            <div>
+              <div
+                class="d-flex align-items-center justify-content-center"
+                style="width: 120px"
+              >
+                <img
+                  src="./images/logo.png"
+                  class="img-fluid"
+                  style="width: 30px; height: 35px"
+                  alt="logo"
+                />
+              </div>
+              <div class="position-relative" style="width: 120px">
+                <h1 style="font-size: 20px; color: #1996ff">
+                  Fashion <span class="text-white">Feet</span>
+                </h1>
+                <div
+                  class="position-absolute top-0 left-0"
+                  style="width: 80%; height: 1px; background-color: #1996ff"
+                ></div>
+                <div
+                  class="position-absolute bottom-0 left-0"
+                  style="width: 80%; height: 1px; background-color: #1996ff"
+                ></div>
+              </div>
+            </div>
+            <p class="my-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              voluptatem consequuntur neque doloribus
+            </p>
+            <div>
+              <div class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-phone ftrIcon"></i>
+                <p>+(00)56-888-999</p>
+              </div>
+              <div class="d-flex align-items-center gap-3 my-3">
+                <i
+                  class="fa-solid fa-message ftrIcon"
+                  style="color: #1996ff"
+                ></i>
+                <p>info@yourname.com</p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-location-dot ftrIcon"></i>
+                <p>New circular road, 1212,</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>MY ACCOUNT</h3>
+            <hr />
+            <p>Login</p>
+            <hr />
+            <p>My Account</p>
+            <hr />
+            <p>My Cart</p>
+            <hr />
+            <p>Wishlist</p>
+            <hr />
+            <p>Checkout</p>
+            <hr />
+            <p>Userinfor</p>
+            <hr />
+            <p>Contact US</p>
+          </div>
+
+          <div>
+            <h3>INFORMATION</h3>
+            <hr />
+            <p>Sitemap</p>
+            <hr />
+            <p>Privacy Policy</p>
+            <hr />
+            <p>Your Account</p>
+            <hr />
+            <p>Advance Search</p>
+            <hr />
+            <p>Affiliate</p>
+            <hr />
+            <p>Group Sales</p>
+            <hr />
+            <p>Contact US</p>
+          </div>
+          <div>
+            <h3>CONTACT US</h3>
+            <hr />
+            <p>Product Recall</p>
+            <hr />
+            <p>Gift Vouchers</p>
+            <hr />
+            <p>Returns and Exchanges</p>
+            <hr />
+            <p>Shipping Options</p>
+            <hr />
+            <p>Blogs</p>
+            <hr />
+            <p>Affiliates</p>
+            <hr />
+            <p>Help & FAQs</p>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #505050; padding: 10px 0; margin-top: 40px">
+        <div
+          class="container d-md-flex align-content-center justify-content-between"
+        >
+          <div>
+            <p style="font-size: 14px; font-weight: 100; color: white">
+              Copyright © FashionFeet. All Rights Reserved
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-4">
+            <div>
+              <img src="images/paypal1.png" alt="" />
+            </div>
+            <div>
+              <img src="images/maescard.png" alt="" />
+            </div>
+            <div>
+              <img src="images/dicove.png" alt="" />
+            </div>
+            <div>
+              <img src="images/card.png" alt="" />
+            </div>
+            <div>
+              <img src="images/visa.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="/JS/script.js"></script>
     <!-- Bootstrap CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
